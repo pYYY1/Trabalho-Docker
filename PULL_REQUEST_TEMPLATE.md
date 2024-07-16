@@ -27,6 +27,19 @@ O servidor estará disponível na url: [http://localhost:3001](http://localhost:
 * [Express](https://expressjs.com/pt-br/)
 * [Mongoose](https://mongoosejs.com/)
 
+### Imagens:
+
+Imagem do DockerFile:
+![DockerFile](https://github.com/user-attachments/assets/a9ae954e-9d05-45b7-94f8-c1ef9cd6494c)
+
+Imagem do docker-compose.yml:
+![docker-compose](https://github.com/user-attachments/assets/c3d7a73f-73b2-4e4a-bda4-a590037e170d)
+
+### Descrição da imagem docker criada:
+São duas imagens
+Uma delas é uma api utilizando mongoose
+E a outra é uma imagem do mongodb para banco de dados
+
 # Colaboradores
 ## Éverson prieto
 ## Gustavo Py
