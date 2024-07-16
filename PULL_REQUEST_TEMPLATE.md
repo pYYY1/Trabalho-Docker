@@ -26,3 +26,10 @@ O servidor estará disponível na url: [http://localhost:3001](http://localhost:
 * [Node.js](https://nodejs.org/en/)
 * [Express](https://expressjs.com/pt-br/)
 * [Mongoose](https://mongoosejs.com/)
+
+# Colaboradores
+## Éverson prieto
+## Gustavo Py
+## Manuela Lobato
+## Rafael Valente
+## Victor Andrei
