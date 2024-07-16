@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api-mongo:
+    restart: always
+    build:
+      context: .
+      target: development
+    container_name: api
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3001:3000
+    expose:
+      - 3001
+    depends_on:
+      - mongo
+    networks:
+      - mongonetwork
+    env_file:
+      - .env
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - 127.0.0.1:27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+    command: mongod --quiet --logpath /dev/null
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mongonetwork
+networks:
+  mongonetwork:
+volumes:
+  mongo-data:
