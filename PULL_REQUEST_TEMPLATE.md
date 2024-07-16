@@ -36,9 +36,7 @@ Imagem do docker-compose.yml:
 ![docker-compose](https://github.com/user-attachments/assets/c3d7a73f-73b2-4e4a-bda4-a590037e170d)
 
 ### Descrição da imagem docker criada:
-São duas imagens
-Uma delas é uma api utilizando mongoose
-E a outra é uma imagem do mongodb para banco de dados
+São duas imagens, uma delas é uma api utilizando mongoose, e a outra é uma imagem do mongodb para banco de dados
 
 # Colaboradores
 ## Éverson prieto
